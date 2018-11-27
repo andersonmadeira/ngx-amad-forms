@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "ngx-amad-forms": {
+      "root": "projects/ngx-amad-forms",
+      "sourceRoot": "projects/ngx-amad-forms/src",
+      "projectType": "library",
+      "prefix": "amad",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-amad-forms/tsconfig.lib.json",
+            "project": "projects/ngx-amad-forms/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-amad-forms/src/test.ts",
+            "tsConfig": "projects/ngx-amad-forms/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-amad-forms/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-amad-forms/tsconfig.lib.json",
+              "projects/ngx-amad-forms/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-amad-forms-app"

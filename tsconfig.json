@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-amad-forms": [
+        "dist/ngx-amad-forms"
+      ],
+      "ngx-amad-forms/*": [
+        "dist/ngx-amad-forms/*"
+      ]
+    }
   }
 }
