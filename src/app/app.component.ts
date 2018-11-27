@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { FormControl } from 'ngx-amad-forms';
+import { TextControl, NumberControl, SelectControl, SelectOption } from 'ngx-amad-forms';
 
 @Component({
     selector: 'app-root',
@@ -7,15 +7,29 @@ import { FormControl } from 'ngx-amad-forms';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    title = 'ngx-amad-forms-app';
 
-    @ViewChild('myText') textControl: FormControl;
-    @ViewChild('myNumber') numControl: FormControl;
-    @ViewChild('myPass') passControl: FormControl;
+    @ViewChild('myText') textControl: TextControl;
+    @ViewChild('myNumber') numControl: NumberControl;
+    @ViewChild('myPass') passControl: TextControl;
+    @ViewChild('myOptions') selectControl: SelectControl;
 
     ngOnInit() {
         this.textControl.value ="Text here";
-        this.numControl.value = "123";
+        this.numControl.value = 3;
         this.passControl.value = "my password goes here";
+
+        let option1 = { value: 1, description: "Option 1" };
+
+        this.selectControl.options = [
+            option1,
+            { value: 2, description: "Option 2" },
+            { value: 3, description: "Option 3" },
+        ]
+
+        this.selectControl.value = option1;
+    }
+
+    onSelected(option: SelectOption) {
+        console.log("Selected in parent: ", option);
     }
 }

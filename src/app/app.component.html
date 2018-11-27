@@ -1,4 +1,4 @@
-
-<amad-form-control #myText [field_type]="'text'" [field_name]="'my_text'" [field_label]="'Type some text:'"></amad-form-control>
-<amad-form-control #myNumber [field_type]="'number'" [field_name]="'my_number'" [field_label]="'Enter a number:'"></amad-form-control>
-<amad-form-control #myPass [field_type]="'password'" [field_name]="'my_password'" [field_label]="'Enter your password:'"></amad-form-control>
+<amad-text-control #myText [field_name]="'my_text'" [field_label]="'Type some text:'"></amad-text-control>
+<amad-number-control #myNumber [field_name]="'my_number'" [field_label]="'Enter a number:'"></amad-number-control>
+<amad-text-control #myPass [password]="true" [field_name]="'my_password'" [field_label]="'Enter your password:'"></amad-text-control>
+<amad-select-control #myOptions [field_name]="'my_select'" (onSelected)="onSelected($event)" [field_label]="'Please choose one of the options:'"></amad-select-control>
