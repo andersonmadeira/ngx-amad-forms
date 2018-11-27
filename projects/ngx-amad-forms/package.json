@@ -1,8 +1,32 @@
 {
-  "name": "ngx-amad-forms",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^7.0.0",
-    "@angular/core": "^7.0.0"
-  }
+    "name": "ngx-amad-forms",
+    "version": "0.0.1",
+    "description": "Easy and powerful forms for Angular",
+    "keywords": [
+        "forms",
+        "angular",
+        "reactive forms",
+        "ngx",
+        "components",
+        "fields",
+        "web",
+        "front",
+        "frontend"
+    ],
+    "homepage": "https://github.com/andersonmadeira/ngx-amad-forms",
+    "bugs": {
+        "url": "https://github.com/andersonmadeira/ngx-amad-forms/issues",
+        "email": "andersonmadeiracs@gmail.com"
+    },
+    "license": "MIT",
+    "author": "Anderson Madeira <andersonmadeiracs@gmail.com> (https://github.com/andersonmadeira/)",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andersonmadeira/ngx-amad-forms"
+    },
+
+    "peerDependencies": {
+        "@angular/common": "^7.0.0",
+        "@angular/core": "^7.0.0"
+    }
 }

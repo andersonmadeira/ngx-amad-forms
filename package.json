@@ -1,10 +1,16 @@
 {
   "name": "ngx-amad-forms-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build_lib": "ng build ngx-amad-forms",
+    "copy-license": "copy .\\LICENSE .\\dist\\ngx-amad-forms",
+    "copy-readme": "copy .\\README.md .\\dist\\ngx-amad-forms",
+    "copy-files": "npm run copy-license && npm run copy-readme",
+    "pack_lib": "cd dist/ngx-amad-forms && npm pack",
+    "package": "npm run build_lib && npm run copy-files && npm run pack_lib",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
