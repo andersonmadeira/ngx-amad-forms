@@ -90,20 +90,20 @@ export class AppComponent implements OnInit {
 
 - Version zero (0)
 
-[x] TextControl
-[x] SelectControl
-[x] NumberControl
-[ ] RadioControl
-[ ] DateControl
-[ ] CheckboxControl
-[ ] TextareaControl
-[ ] FileControl
-[ ] HiddenControl
-[ ] Form
-[ ] FormBuilder
-[ ] Make form validators (required, email, etc)
-[ ] Option for multile selection in SelectControl
-[ ] Simple visual (optional)
+- [x] TextControl
+- [x] SelectControl
+- [x] NumberControl
+- [ ] RadioControl
+- [ ] DateControl
+- [ ] CheckboxControl
+- [ ] TextareaControl
+- [ ] FileControl
+- [ ] HiddenControl
+- [ ] Form
+- [ ] FormBuilder
+- [ ] Make form validators (required, email, etc)
+- [ ] Option for multile selection in SelectControl
+- [ ] Simple visual (optional)
 
 ## Contributions
 
